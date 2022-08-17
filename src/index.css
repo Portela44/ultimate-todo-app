@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header */
+
+.header {
+  display:flex;
+  justify-content: center;
+  font-family: trattatello;
+}
+
+.header>button {
+  font-family: fantasy;
+  font-size: 1.5em;
+  padding:0px 10px;
+  align-self: center;
+  border: 2px solid darkslategray;
+  border-radius: 30%;
+  margin: 0px 20px;
+  background-color: transparent;
+}
+
+/* TaskCard */
+
+.taskCard {
+  font-family: Chalkduster;
+  display:flex;
+  justify-content: space-between;
+  align-self: center;
+  height: 100px;
+  width: 70%;
+  margin: 30px 20px;
+  padding: 20px 30px;
+  border: 2px solid darkslategray;
+  border-radius: 30px;
+}
+
+.urgency{
+  align-self: center;
+} 
+
+.taskCard>img {
+  width:100px;
+  border-radius: 30%;
+  border: 2px solid darkslategray;
+}
+
+.taskInfo {
+  align-self:center;
+  width: 60%;
+}
+
+.taskInfo>h3, .taskInfo>h5 {
+  margin:0px;
+}
+
