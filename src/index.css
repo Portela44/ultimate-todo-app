@@ -46,7 +46,7 @@ code {
   width: 70%;
   margin: 30px 20px;
   padding: 20px 30px;
-  border: 25px solid rgba(255,255,255,.8);
+  border: 25px solid rgba(255,255,255,.1);
   border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
 }
 

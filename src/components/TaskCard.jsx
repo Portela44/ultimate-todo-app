@@ -1,11 +1,9 @@
 import React from 'react'
 
 export default function TaskCard(props) {
-    const {task: {name, image, useful_link, urgency, description, done}} = props;
+    const {task: {name, image, useful_link, urgency, description, done}, onDelete} = props;
     return (
         <div className="taskCard">
-            {/* Checkbox begins */}
-            {/* Checkbox ends */}
             <input type="checkbox" value="done" />
             <img src={image} alt={name} />
             <div className="taskInfo">
@@ -14,7 +12,7 @@ export default function TaskCard(props) {
                 <h5>{useful_link}</h5>
             </div>
             <h1 className="urgency">{urgency}</h1>
-            <button className="delete-btn">Delete</button>
+            <button className="delete-btn" onClick={() => onDelete(name)}>Delete</button>
         </div>
     )
 }
