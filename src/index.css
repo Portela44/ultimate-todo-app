@@ -16,14 +16,12 @@ code {
 }
 
 /* Header */
-
 .header {
   display:flex;
   justify-content: center;
   font-family: Chalkduster;
 }
-
-.header>button {
+.menu-btn {
   font-family: Chalkduster;
   font-size: 1.5em;
   padding:0px 10px;
@@ -33,6 +31,44 @@ code {
   margin: 0px 20px;
   background-color: transparent;
   color:white;
+}
+
+/*New Task Form*/
+.taskForm {
+  display:flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0px auto 30px;
+}
+
+.taskForm > h2, label {
+  margin:5px 0px;
+  font-family: Chalkduster;
+}
+
+.taskForm>input {
+  width: 230px;
+  background-color: transparent;
+  border: 5px solid rgba(255, 255,255,0.8);
+  border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+  color:white;
+  font-family: Chalkduster;
+  margin: 5px 0px;
+}
+
+.taskForm>button {
+  margin-top:20px;
+}
+
+
+/*Search bar*/
+.searchBar {
+  margin-left: 20px;
+  background-color: transparent;
+  border: 5px solid rgba(255, 255,255,0.8);
+  border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+  color:white;
+  font-family: Chalkduster;
 }
 
 /* TaskCard */
@@ -78,5 +114,12 @@ code {
   border-radius: 10px;
   margin: 5px 15px;
   color:white;
+}
+
+/*No tasks*/
+
+.noTasks {
+  width:500px;
+  margin: 100px 200px
 }
 

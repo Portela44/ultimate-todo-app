@@ -47,19 +47,20 @@ function App() {
     setFilteredTasks(pendingTasks)
   },[pendingTasks, sorted]);
 
-
   return (
     <div className="App">
       <header className="header">
         <h1>To-do List</h1>
-        <button onClick={() => setShowForm(prev => !prev)}>{showForm ? "Hide form":"+"}</button>
-        <button onClick={() => handleUrgency()}>{sorted ? "Back to normal":"Show urgent"}</button>
+        <button className="menu-btn" onClick={() => setShowForm(prev => !prev)}>{showForm ? "Hide form":"+"}</button>
       </header>
       {showForm && <NewTask newTask={handleNewTask}/>}
-      <input className="searchBar" type="text" onChange={(e) => handleSearch(e)}/>
+      <input className="searchBar" placeholder="Buscar" type="text" onChange={(e) => handleSearch(e)}/>
+      <button className="menu-btn" onClick={() => handleUrgency()}>{sorted ? "Back to normal":"Show urgent"}</button>
       {filteredTasks.map(task => {
         return <TaskCard key={task.name} task={task} onDelete={handleDelete}/>
       })}
+      <br/>
+      {filteredTasks.length===0 && <img className="noTasks" src="https://www.onlygfx.com/wp-content/uploads/2019/02/8-chalk-stroke-banner-3.png"/>}
     </div>
   );
 }
