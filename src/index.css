@@ -20,11 +20,11 @@ code {
 .header {
   display:flex;
   justify-content: center;
-  font-family: trattatello;
+  font-family: Chalkduster;
 }
 
 .header>button {
-  font-family: fantasy;
+  font-family: Chalkduster;
   font-size: 1.5em;
   padding:0px 10px;
   align-self: center;
@@ -46,8 +46,7 @@ code {
   width: 70%;
   margin: 30px 20px;
   padding: 20px 30px;
-  border: 25px solid rgba(255,255,255,.1);
-  border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+  border: 20px solid rgba(255,255,255,.8);
 }
 
 .urgency{
