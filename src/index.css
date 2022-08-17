@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://img.besthqwallpapers.com/Uploads/13-2-2021/154552/blackboard-school-texture-blackboard-background-gray-texture-blackboard-texture.jpg);
+  background-size: 150%;
+  color:white;
 }
 
 code {
@@ -25,10 +28,11 @@ code {
   font-size: 1.5em;
   padding:0px 10px;
   align-self: center;
-  border: 2px solid darkslategray;
+  border: 2px solid white;
   border-radius: 30%;
   margin: 0px 20px;
   background-color: transparent;
+  color:white;
 }
 
 /* TaskCard */
@@ -42,8 +46,8 @@ code {
   width: 70%;
   margin: 30px 20px;
   padding: 20px 30px;
-  border: 2px solid darkslategray;
-  border-radius: 30px;
+  border: 25px solid rgba(255,255,255,.8);
+  border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
 }
 
 .urgency{
@@ -53,7 +57,8 @@ code {
 .taskCard>img {
   width:100px;
   border-radius: 30%;
-  border: 2px solid darkslategray;
+  border: 2px solid white;
+  margin: 5px 5px;
 }
 
 .taskInfo {
@@ -61,7 +66,18 @@ code {
   width: 60%;
 }
 
-.taskInfo>h3, .taskInfo>h5 {
-  margin:0px;
+.taskInfo>h2, .taskInfo>h5 {
+  margin:15px;
+}
+
+.delete-btn {
+  font-family: Chalkduster;
+  font-size: 1.5em;
+  height:40px;
+  align-self: center;
+  background-color: lightcoral;
+  border-radius: 10px;
+  margin: 5px 15px;
+  color:white;
 }
 
