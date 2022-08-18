@@ -123,3 +123,15 @@ code {
   margin: 100px 200px
 }
 
+/*Done tasks*/
+
+.dividingChalk {
+  width:80%;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.listTitle {
+  font-family: Chalkduster;
+  text-align:center;
+}
