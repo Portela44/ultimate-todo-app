@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 export default function TaskCard(props) {
     const {task: {name, image, useful_link, urgency, description, done}, onDelete, onDone} = props;
